@@ -37,7 +37,10 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: left;
 }
 
 nav a {
@@ -53,17 +56,42 @@ nav .active {
 
 
 .hero {
-    height: 80vh;
-    background: url('../images/hero.jpg') no-repeat center/cover;
+    height: 130vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: black;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 30px;
+    margin:5px;
+   
 }
 
+.hero:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+
+/* .hero-content{
+    width: 400px;
+    border: 1px solid gray;
+    margin: 5px;
+}   */
+
+
+.hero-content:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.hero img{
+    height: 500px;
+    width: 1000px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px 0;
+}
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -96,6 +124,7 @@ nav .active {
 
 .card:hover {
     transform: translateY(-5px);
+    
 }
 
 
@@ -103,6 +132,10 @@ nav .active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+}
+
+.team-grid:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .player-card {
@@ -113,7 +146,7 @@ nav .active {
 }
 
 .player-card :hover{
-    color:blue
+    color: #ffcc00;
 }
 
 .styled-table {
@@ -131,9 +164,11 @@ nav .active {
 footer {
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
-    background: #0a1f44;
-    color: white;
+    margin-top: 50px;
+    background: url(../images/wave.svg);
+    color:black;
+    height: 300px;
+    width: 100%;
 }
 
 @media(max-width: 768px) {
